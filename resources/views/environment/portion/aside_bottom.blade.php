@@ -1,0 +1,1 @@
+<aside class="asidePanel asidePanel-bottom">aside Panel-bottom</aside>
