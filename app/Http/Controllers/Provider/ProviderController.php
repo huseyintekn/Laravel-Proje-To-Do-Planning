@@ -29,7 +29,7 @@ class ProviderController extends Controller
         $providers = $this->providers->getProvider($url);
         $data['getTotalTime'] = $this->providers->getTotalTime($providers);
         $data['devs'] = $this->providers->getDevCount($providers, 5);
-        $data['finisTime'] = $data['getTotalTime'] / $this->week ;
+        $data['finisTime'] = $data['getTotalTime'] / ($this->week * 5) ;
         return view('provider.list', $data);
     }
 
