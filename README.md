@@ -6,6 +6,8 @@ Clone repository
 
 Run composer install
 
+Run php artisan migrate
+
 Leave option empty for fetch and compare all providers or specify a provider.
 
 Note: ProviderName refers to the adapter class name.
