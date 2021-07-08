@@ -23,7 +23,7 @@ Route::middleware(['auth'])->group(function () { });
 		Route::get('/ajax', 'DashboardController@ajax')->name('ajax');
 	});
 
-    Route::group(['namespace' => 'Provider', 'prefix' => 'provider'], function() {
+    Route::group(['namespace' => 'Provider'], function() {
         Route::get('/', 'ProviderController@index')->name('provider.index');
         Route::get('/create', 'ProviderController@create')->name('provider.create');
         Route::post('/create', 'ProviderController@store')->name('provider.store');
